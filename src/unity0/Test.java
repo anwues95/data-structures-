@@ -11,12 +11,7 @@ package unity0;
  */
 public class Test {
     public static void main (String[] args){
-        testingStacks();
-        testingQueves();
         
-    }
-
-    public static void main(String[] args) {
         Stack s = new Stack ();
         s.add(10);
         s.add(20);
@@ -27,6 +22,7 @@ public class Test {
         for (int i=2; i< 20; i+=2){
             s.add(i);
         }
+        System.out.print("initial element ");
         s.print();
     
         
