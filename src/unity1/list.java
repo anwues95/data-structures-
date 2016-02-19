@@ -78,4 +78,9 @@ public class list {
         }
         return -1;
     }
+    public void removeFirstElement(){
+        node aux=head;
+        node n =aux;
+    
+}
 }
