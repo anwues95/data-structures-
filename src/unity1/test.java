@@ -24,5 +24,7 @@ public class test {
         
          System.out.println("The first elemet is : " + l.firstElement());
          System.out.print(" the last elemet is " + l.lastElement());
+                 
+         
     }
 }

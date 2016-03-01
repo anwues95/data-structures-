@@ -78,9 +78,25 @@ public class list {
         }
         return -1;
     }
-    public void removeFirstElement(){
-        node aux=head;
-        node n =aux;
-    
-}
+
+    public void removeFirstElement() {
+        node aux = head;
+        node n = aux;
+
+    }
+
+    public void removelastElement() {
+        if (head == null) {
+            return;
+        }
+        node aux = head, p = null;
+        while (aux.next != null) {
+            p = aux;
+            aux = aux.next;
+        }
+        if (head.next == null) {
+            head = null;
+
+        }
+    }
 }
