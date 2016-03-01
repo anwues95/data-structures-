@@ -99,4 +99,28 @@ public class list {
 
         }
     }
+
+    public void duplicate() {
+        if (head == null) {
+            return;
+        }
+        node last = head, aux = head;
+        while (last.next != null) {
+            last = last.next;
+
+        }
+        int c = count();
+        for (int i = 0; i < c; i++) {
+            last.next = new node(aux.data);
+            aux = aux.next;
+            last = last.next;
+        }
+
+    }
+
+    public void duplicatemirror() {
+        
+         
+        
+    }
 }

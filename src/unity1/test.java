@@ -24,6 +24,14 @@ public class test {
         
          System.out.println("The first elemet is : " + l.firstElement());
          System.out.print(" the last elemet is " + l.lastElement());
+         System.out.println("Duplicating ...");
+         l.duplicate();
+         System.out.println("values after duplication ");
+         l.print();
+         System.out.println("duplicating mirror ");
+         l.duplicatemirror();
+         System.out.println("values after duplication ");
+         l.print();
                  
          
     }
