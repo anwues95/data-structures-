@@ -123,4 +123,18 @@ public class list {
          
         
     }
+    public  int duplicateintercalate (){
+        node aux = head;
+        while (aux != null){
+            node n= new node (aux.data);
+            n.next=aux.next;
+            aux.next=n;
+            aux=n.next;
+        }
+        
+    }
 }
+
+        
+    
+
