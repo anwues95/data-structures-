@@ -32,9 +32,7 @@ public class test {
          l.duplicatemirror();
          System.out.println("values after duplication ");
          l.print();
-         System.out.println(" The result list"+l.duplicateintercalate());
-         l.print();
-                 
+         
          
     }
 }
