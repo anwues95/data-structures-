@@ -73,5 +73,50 @@ public class List {
 
         }
     }
+    public void removefirst(){
+        if ( Head == null){
+            return;
+            
+        }
+        if (Head.next== Head ){
+            Head = null;
+            
+        }else{
+            Head.back.next= Head.next;
+            Head.next.back= Head.back;
+            Head= Head.next;
+        }
+    }
+    public void removelast (){
+        if (Head == null) {
+            return;
+        }
+        Node aux = Head, p = null;
+        while (aux.next != null) {
+            p = aux;
+            aux = aux.next;
+            
+        }
+        if (Head.next == null) {
+            Head = null;
+
+        }
+        
+        
+    }
+    public void invert (){
+        if ( Head == null)return;
+        Node aux = Head,Head2 = null;
+        while ( Head != null){
+            aux= Head;
+            Head= Head.next;
+            aux.next= Head2;
+            Head2= aux;
+         }
+        Head = Head2;
+                
+        
+        
+    }
 
 }
