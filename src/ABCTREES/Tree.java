@@ -75,17 +75,41 @@ public class Tree {
                 aux = aux.rigth;
 
             } else if (d > aux.data) {
-                aux=aux.left;
-            }else{
-                if (aux.rigth == null && aux.left==null){
+                aux = aux.left;
+            } else {
+                if (aux.rigth == null && aux.left == null) {
                     return true;
-                }
-                else{
+                } else {
                     return false;
                 }
             }
         }
         return false;
+    }
+
+    public void recursivePrint() {
+        recursivePrint(root);
+        System.out.println();
+    }
+
+    private void recursivePrint(Node r) {
+        if (r == null) {
+            return;
+        }
+        recursivePrint(r.left);
+        System.out.print(" " + r.data);
+        recursivePrint(r.rigth);
+    }
+    public int recursiveCount(){
+        
+        return recursiveCount(root);
+    
+    }
+    private int recursiveCount (Node r){
+        if(r == null)return 0;
+        return recursiveCount(r.left)+
+            recursiveCount (r.rigth) +1;
+            
     }
 
 }

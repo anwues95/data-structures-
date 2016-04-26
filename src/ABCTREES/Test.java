@@ -26,6 +26,7 @@ public class Test {
         }else{
             System.out.println(" "+v+ "Does not a leaf ");
         }
+        t.recursivePrint();
         
    }
    
