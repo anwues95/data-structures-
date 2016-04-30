@@ -111,5 +111,30 @@ public class Tree {
             recursiveCount (r.rigth) +1;
             
     }
+    private void inorderPrint(){
+        inorderPrint(root);
+        System.out.println();
+    }
+    private void inorderPrint(Node r){
+        if (r == null)return ;
+        inorderPrint(r.left);
+        System.out.print(" "+r.data);
+        inorderPrint(r.rigth);
+        
+    }
+    public void preorderPrint(){
+        inorderPrint(root);
+        System.out.println();
+    }
+    private void preorderPrint( Node r){
+        if(r == null) return;
+        inorderPrint(r.left);
+        inorderPrint(r.rigth);
+        
+    }
+    public void postorderPrint(){
+        
+        
+    }
 
 }
