@@ -12,12 +12,12 @@ package ABCTREES;
 public class Node {
     protected int data;
     protected Node left;
-    protected Node rigth;
+    protected Node right;
     
     public Node (int d){
         data=d;
         left= null;
-        rigth=null;
+        right=null;
         
     }
     
